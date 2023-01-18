@@ -1,6 +1,6 @@
 {
   "name": "@hisayuki-komatsu/dayts-package",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "npm package for date",
   "main": "index.js",
   "scripts": {
