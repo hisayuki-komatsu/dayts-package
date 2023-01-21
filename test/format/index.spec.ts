@@ -11,9 +11,15 @@ describe('FormatDateFunctions', () => {
     expect(true).to.equal(true)
   })
 
-  it('should return in YYYY/M/D', () => {
+  it('should return in YYYY/MM/DD', () => {
     const date = new Date('2023-01-01')
-    const formatedDateString = formatDate(date)
+    const formatedDateString = formatDate(date, 'YYYY/MM/DD')
     expect(formatedDateString).to.equal('2023/1/1')
+  })
+
+  it('should return in YYYY-MM-DD', () => {
+    const date = new Date('2023-01-01')
+    const formatedDateString = formatDate(date, 'YYYY-MM-DD')
+    expect(formatedDateString).to.equal('2023-1-1')
   })
 })
