@@ -1,4 +1,4 @@
-import { FormatType } from '../../types/index'
+import { FormatType } from '~/types/index'
 
 export const formatDate = (date: Date, formatType: FormatType): string => {
   const year = date.getFullYear()

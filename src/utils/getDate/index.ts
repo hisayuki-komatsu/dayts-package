@@ -1,4 +1,4 @@
-import { DateUtil } from '../../types'
+import { DateUtil } from '~/types'
 
 export const getDate = (date: Date, util: DateUtil): number => {
   if (util === 'year') return date.getFullYear()

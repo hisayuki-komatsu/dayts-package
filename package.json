@@ -2,10 +2,15 @@
   "name": "@hisayuki-komatsu/dayts-package",
   "version": "0.0.0",
   "description": "npm package for date",
-  "main": "index.js",
+  "files": [
+    "build"
+  ],
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
   "scripts": {
     "start": "node dist/index.js",
     "dev:watch": "env tsc-watch --onSuccess 'node --require=dotenv/config dist/index.js'",
+    "build": "tsc && vite build",
     "tsc": "tsc",
     "test": "mocha --recursive=true --require=ts-node/register --require=dotenv/config --timeout 10000 --extension=ts --exit"
   },
@@ -23,9 +28,13 @@
     "mocha": "^10.2.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.3",
+    "ts-loader": "^9.4.2",
     "ts-node": "^10.9.1",
     "tsc-watch": "^6.0.0",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.4",
+    "vite": "^4.1.4",
+    "vite-plugin-dts": "^2.0.1",
+    "vite-tsconfig-paths": "^4.0.5"
   },
   "publishConfig": {
     "@hisayuki-komatsu:registry": "https://npm.pkg.github.com"
