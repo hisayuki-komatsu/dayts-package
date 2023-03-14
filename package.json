@@ -36,6 +36,6 @@
     "vite-tsconfig-paths": "^4.0.5"
   },
   "publishConfig": {
-    "@hisayuki-komatsu:registry": "https://npm.pkg.github.com"
+    "@hisayuki-komatsu:registry": "https://npm.pkg.github.com/hisayuki-komatsu"
   }
 }
